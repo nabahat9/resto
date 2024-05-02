@@ -1,0 +1,258 @@
+.form-container {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    height: calc(100vh - 60px);
+}
+@keyframes unfold {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.05) rotateY(-10deg);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotateY(0deg);
+    }
+  }
+.form-container form.signUp-content {
+    animation: unfold 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    width: 600px;
+    max-width: 600px;
+    height: 430px;
+    max-height: 430px;
+    border-radius: 20px;
+    background-color: #fff;
+    background-image: url(../assets/formImages/login2.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+.form-icons {
+    padding: 20px 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%
+}
+.form-icons .icon1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.form-icons .icon2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+ 
+.form-icons .icon2:hover, .adds .icon2:hover {
+    font-size: 1.5rem;
+    color: var(--primary);
+    rotate: 180deg;
+}
+.dialogForm, form.login-form .inputs-container {
+    gap: 1rem
+}
+.dialogForm h1{
+    margin-left: 22px;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input-container .input-icon {
+    font-size: 18px;
+    color: var(--primary);
+}
+.input-container input {
+    width: 192px;
+    height: 29px;
+    padding: 0 1rem;
+    margin-bottom: 0.4rem;
+    border-radius: 15px;
+    background-color: rgba(217, 217, 217, 0.3);
+    border: none;
+    outline: none;
+}
+.dialogForm .input-container input:placeholder-shown {
+    opacity: 0.6;
+}
+.dialogForm .user-data {
+    text-align: center;
+}
+.match {
+    position: absolute;
+    width: 140px;
+    height: 5px;
+    bottom: 31%;
+    font-size: 10px;
+    color: red;
+}
+.dialogForm .user-data button {
+    margin-left: 26.5%;
+    margin-bottom: 0.8rem;
+    height: 40px;
+    width: 138px;
+    border: 1.5px solid var(--primary);
+}
+.dialogForm .user-data .connection-remark {
+    font-size: 12px;
+    color: #B6B6B6;
+}
+.dialogForm .user-data .connection-remark span {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--secondary);
+    cursor: pointer;
+}
+.form-container .welcome h1 {
+    margin-bottom: 4rem
+}
+.form-container .welcome p {
+    width: 350px;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+.login-content, .forgot-password {
+    animation: unfold 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    background-image: url(../assets/formImages/password.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    max-width: 600px;
+    height: 400px;
+    max-height: 400px;
+    border-radius: 15px;
+}
+.login-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr) minmax(300px, 1fr));
+}
+.login-content form.login-form {
+   padding: 3rem 2rem;
+   gap: 2rem
+}
+.login-content form.login-form h1 {
+    color: var(--primary);
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+}
+form.login-form .inputs-container p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #B6B6B6;
+}
+form.login-form .inputs-container p:hover {
+    color: hsl(0, 0%, 50%);
+    cursor: pointer;
+}
+form.login-form .inputs-container input, .forgot-password-info-content input {
+    color: #fff;
+}
+.login-content .welcome {
+    position: absolute;
+    width: 300px;
+    max-width: 300px;
+    height: 400px;
+    max-height: 400px;
+    transform: translateX(100%);
+    border-radius: 70px 15px 15px 70px;
+    padding: 3.5rem 1rem;
+    background-image: url(../assets/formImages/login2.jpg);
+    background-position: top right;
+}
+.welcome button {
+    margin-bottom: 1.2rem;
+    border-width: 1px;
+}
+
+.login-content .welcome p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 270px
+}
+.adds .icon2 {
+    position: absolute;
+    right: 20px; 
+    top: 25px;
+    font-size: 20px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+.forgot-password .icon1, .forgot-password .icon2 {
+    color: #fff
+}
+.forgot-password-info {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.forgot-password-info .forgot-password-info-content {
+    max-width: 400px;
+    margin-bottom: 4rem;
+    gap: 1.3rem
+}
+.forgot-password-info-content p {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.forgot-password-info-content h1 {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 35px;
+}
+.verification .input-container input {
+    width: 41px;
+    height: 29px;
+    font-size: 17px;
+    padding: 14px;
+    color: var(--primary)
+}
+.verification .input-container input:focus {
+    border: 2px solid var(--primary) !important ; 
+}
+.crt .forgot-password-info-content {
+    width: 500px;
+}
+.forgot-password-info .creation {
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+.forgot-password-info .creation p {
+    width: 500px
+}
+.forgot-password-info h1 {
+    font-size: 30px;
+    width: 500px
+}
+.creation .icon-container {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    font-size: 4rem;
+    margin-bottom: 2rem
+}
+                                

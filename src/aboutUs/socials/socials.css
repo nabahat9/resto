@@ -1,0 +1,12 @@
+.socials {
+    height: 511px;
+}
+.socials-code .social span {
+    font-size: 20px;
+    font-weight: 500;
+}
+.socials-code .social .code-img {
+    width: 204px;
+    height: 204px;
+    overflow: hidden;
+}

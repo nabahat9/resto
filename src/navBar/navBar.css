@@ -1,0 +1,101 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:60px;
+    padding: 0 30px;
+    background-color: #E5E5E4;
+    box-shadow: 5px 0 10px #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+header .profile {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+header nav a {
+    font-weight: 400 ;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+    transition: ease all .5s;
+    position: relative;
+}
+header .profile a {
+    font-weight: 800;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    transition: ease all .3s;
+}
+header nav a::after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 0 ;
+    bottom: -3px;
+    left: 0;
+    transition: ease all .5s;
+}
+header nav a.active:not(.btn-connect a.active) {
+   color: var(--primary);
+   border-bottom: var(--primary) 3px solid;
+}
+header nav a:hover:not(a.active):not(.btn-connect a)::after {
+    background-color: var(--primary);
+    width: 100%;
+}
+header nav a:hover, header .profile a:hover, header .profile a.active {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.btn-connect-main {
+    min-width: 160px ;
+    height: 40px;
+    margin-right: 1rem;
+    background-color: var(--primary);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px;
+    text-transform: capitalize;
+    border-radius: 15px;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+.btn-connect {
+    position: relative;
+    min-width: 160px ;
+    height: 40px;
+    font-size: 16px;
+    padding: 15px;
+    margin: auto;
+    text-transform: lowercase;
+    border-radius: 15px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-connect a {
+    color: var(--primary) !important;
+    text-decoration: none;
+}
+.profile, nav {
+    position: relative;
+    z-index: 10;
+}

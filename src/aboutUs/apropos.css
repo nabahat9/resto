@@ -1,0 +1,28 @@
+.border {
+    border: 2px solid red
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+/* hero section */
+.aboutUs-container {
+    height: 5665px;
+    width: 100%;
+    background-image: url(../assets/aboutus/backgroundaboutus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.aboutUs-container h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*story section*/
+.story-section, .rating-section, .rewards-section, .all-restaurants {
+    width: 1200px;
+    height: 744px;
+    margin: auto;
+}
+

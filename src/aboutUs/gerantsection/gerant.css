@@ -1,0 +1,37 @@
+.gerant-restaurent .gerant-content {
+    position: relative;
+    width: 100vw;
+    height: 354px;
+    text-align: center;
+    background-color: #FAF6E7;
+}
+.gerant-restaurent .gerant-content .first {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 875px;
+}
+.gerant-content .gerant-img {
+    position: absolute;
+    bottom: -84px;
+    right: 10%;
+    width: 167px;
+    height: 167px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 20px solid #C9AA6C;
+}
+.gerant-content .gerant-img img, .country-flag img, .planet-img img, .planet .cercle-img img, .planet .orbit-img img, .code-img img {
+    width: 100%;
+}
+.gerant-content .gerant-vector1, .gerant-content .gerant-vector2 {
+    position: absolute;
+}
+.gerant-content .gerant-vector1 {
+    top: -25%;
+    left: 10%;
+}
+.gerant-content .gerant-vector2 {
+    top: -27%;
+    right: 15%;
+}

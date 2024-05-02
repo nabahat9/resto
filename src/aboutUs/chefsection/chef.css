@@ -1,0 +1,71 @@
+.chefs-section, .gerant-restaurent {
+    position: relative;
+    width: 100%;
+    height: 747px;
+}
+.chefs-section .chefs-container {
+    position: absolute;
+    bottom: 10%;
+    width: 100vw;
+    gap: 3rem;
+}
+.chefs-container .best-team {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1000px;
+    height: 320px;
+    background-color: #FAF6E7;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+.best-team .team-img {
+    position: relative;
+    width: 297px;
+    height: 297px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 20px solid #FFB92C66
+}
+.best-team .team-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: transparent;
+    border: 10px solid hsla(40, 100%, 59%, 0.3);
+    border-radius: 50%;
+}
+.best-team .team-img img, .main-chefs .mainChef-img img, .reward-img img {
+    width: 100%;
+}
+.best-team .about-team {
+    width: 400px;
+    text-align: justify;
+}
+.chefs-container .main-chefs {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem 0;
+}
+.main-chefs span {
+    font-size: 20px;
+    font-weight: 500;
+}
+.main-chefs .mainChef-img {
+    position: relative;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.main-chefs .mainChef-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: transparent;
+    border: 4px solid hsla(40, 100%, 59%, 0.6);
+    border-radius: 50%;
+}

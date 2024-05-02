@@ -1,0 +1,228 @@
+.LesAdditions {
+  position: absolute;
+  z-index: 9999;
+  bottom: 0px;
+  margin-left: 25px;
+  background-color: #faf6e7;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 179px;
+  height: 50px;
+  border-radius: 15px 15px 0px 0px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+.additions {
+  display: flex;
+}
+.rightArrow,
+.leftArrow {
+  width: 38px;
+  cursor: pointer;
+  height: 38px;
+  background-color: #ffb92c;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sscrolingItemss {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.visibleAdditions {
+  display: flex;
+}
+.additionsListo {
+  z-index: 9999;
+  position: fixed;
+  display: flex;
+  flex-shrink: 0;
+  bottom: 0;
+  height: 264px;
+  width: 100%;
+  align-items: center;
+  background-color: #faf6e71a;
+  backdrop-filter: blur(15px);
+  border: 3px solid #ffb92c;
+  border-radius: 15px 15px 0px 0px;
+  margin: 0px;
+  box-shadow: -46.57px 46.57px 46.57px 0px #ffffff1a inset,
+    46.57px -46.57px 46.57px 0px #bebbb01a inset;
+  padding: 0px;
+}
+.additionsListo .additionItems {
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.itemm {
+  display: grid;
+  width: 179px;
+  height: 201px;
+  top: 512px;
+  left: 667px;
+  gap: 0px;
+  border-radius: 15px;
+  opacity: 1;
+  background-color: #faf6e7;
+  justify-content: center;
+}
+.additionPrice,
+.additionName {
+  display: flex;
+  justify-content: center;
+}
+.quantityDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  width: 138px;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid #ffb92c;
+  background-color: #faf6e7;
+}
+
+.quantityPara {
+  color: #000000;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+.paragraphDive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Outfit";
+  font-weight: 400;
+}
+.imageDive {
+  display: flex;
+  justify-content: center;
+}
+.itemImgg {
+  width: 86px;
+  height: 86px;
+}
+.moinadditionButton,
+.addadditionButton {
+  cursor: pointer;
+}
+.LesAdditions {
+  font-family: "Outfit";
+  font-weight: 400;
+  color: #000000;
+}
+
+.lds-default,
+.lds-default div {
+  box-sizing: border-box;
+}
+.lds-default {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-default div {
+  position: absolute;
+  width: 6.4px;
+  height: 6.4px;
+  background: currentColor;
+  border-radius: 50%;
+  animation: lds-default 1.2s linear infinite;
+}
+.lds-default div:nth-child(1) {
+  animation-delay: 0s;
+  top: 36.8px;
+  left: 66.24px;
+}
+.lds-default div:nth-child(2) {
+  animation-delay: -0.1s;
+  top: 22.08px;
+  left: 62.29579px;
+}
+.lds-default div:nth-child(3) {
+  animation-delay: -0.2s;
+  top: 11.30421px;
+  left: 51.52px;
+}
+.lds-default div:nth-child(4) {
+  animation-delay: -0.3s;
+  top: 7.36px;
+  left: 36.8px;
+}
+.lds-default div:nth-child(5) {
+  animation-delay: -0.4s;
+  top: 11.30421px;
+  left: 22.08px;
+}
+.lds-default div:nth-child(6) {
+  animation-delay: -0.5s;
+  top: 22.08px;
+  left: 11.30421px;
+}
+.lds-default div:nth-child(7) {
+  animation-delay: -0.6s;
+  top: 36.8px;
+  left: 7.36px;
+}
+.lds-default div:nth-child(8) {
+  animation-delay: -0.7s;
+  top: 51.52px;
+  left: 11.30421px;
+}
+.lds-default div:nth-child(9) {
+  animation-delay: -0.8s;
+  top: 62.29579px;
+  left: 22.08px;
+}
+.lds-default div:nth-child(10) {
+  animation-delay: -0.9s;
+  top: 66.24px;
+  left: 36.8px;
+}
+.lds-default div:nth-child(11) {
+  animation-delay: -1s;
+  top: 62.29579px;
+  left: 51.52px;
+}
+.lds-default div:nth-child(12) {
+  animation-delay: -1.1s;
+  top: 51.52px;
+  left: 62.29579px;
+}
+@keyframes lds-default {
+  0%,
+  20%,
+  80%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+.loadingDivv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

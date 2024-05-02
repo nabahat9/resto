@@ -1,0 +1,38 @@
+.story-section .story-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 400px));
+    gap: 3rem;
+}
+.story-content .story-text p {
+    text-align: justify;
+    line-height: 30px;
+}
+.story-content .story-text .story-btn {
+    width: 250px;
+    height: 40px;
+    gap: 1rem;
+    border-radius: 15px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: .3s; 
+}
+.story-content .story-text .story-btn:hover {
+    background-color: hsl(38, 100%, 50%);
+}
+.story-images, .gerant-restaurent .gerant-content {
+    gap: 2rem;
+}
+.story-images .image-container {
+    width: 250px;
+    height: 152px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.story-images .image-container:nth-child(2) {
+    width: 293px;
+    height: 229px;
+}

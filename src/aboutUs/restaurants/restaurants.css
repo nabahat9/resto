@@ -1,0 +1,97 @@
+.all-restaurants {
+    position: relative;
+}
+.all-restaurants .all-restaurants-content {
+    position: absolute;
+    bottom: 2%;
+    gap: 4rem
+}
+.all-restaurants-content p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.all-restaurants-content .restaurants-location {
+    gap: 3rem;
+    padding: 0 3rem;
+}
+.countries .country {
+    max-width: 248px;
+    max-height: 50px;
+    background-color: #E5E5E4;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+.countries .country.child0, .countries .country.child4 {
+    margin-left: 4rem;
+}
+.countries .country.child1, .countries .country.child3 {
+    margin-left: 2rem;
+}
+.countries .country.child2 {
+    margin-left: 0.5rem;
+}
+.countries .country.active {
+    border: 1px solid var(--primary);
+}
+.countries .country:hover {
+    border-color: var(--primary);
+    cursor: pointer;
+}
+.country .country-flag {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+}
+.country .country-name {
+    font-size: 20px;
+    color: var(--secondary)
+}
+.planet {
+    position: relative;
+    width: 350px;
+}
+.planet .planet-img {
+    position: absolute;
+    width: 500px;
+    height: 80%;
+    left: -35%;
+    bottom: 15%;
+    overflow: hidden;
+}
+.planet .cercle-img {
+    position: absolute;
+    width: 370px;
+    height: 92%;
+    left: -11%;
+    bottom: 9%;
+    overflow: hidden; 
+}
+.planet .orbit-img {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 41.5%;
+    bottom: 51.5%;
+    overflow: hidden;
+    animation: orbit 10s linear infinite;
+}
+@keyframes orbit {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(185px) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(185px) rotate(-360deg);
+    }
+}
+.country-info, .socials-content, .socials-content .socials-code, .story-content .story-text {
+    gap: 3rem
+}
+.country-info .adress, .country-info .contact, .socials-code .social {
+    gap: 1rem;
+}
