@@ -1,0 +1,69 @@
+.serverCallDiv {
+  display: flex;
+  justify-content: center;
+}
+.footPart {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  justify-content: right;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.epliseServerCall {
+  position: relative;
+  z-index: 9999;
+  bottom: 5px;
+  right: -30px;
+  width: 72.87px;
+  height: 72.87px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background-color: #ff0001;
+  align-items: center;
+}
+.greyDivCallServer {
+  padding-left: 100px;
+  display: flex;
+  background-color: #d9d9d92b;
+  width: 959.66px;
+  height: 60.92px;
+  border-radius: 15px;
+  border: 4px solid #b6b6b633;
+}
+.tableNumCallServer {
+  margin: 5px;
+  font-family: PoppinsBold;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 31px;
+  background-color: #ffe5e5;
+  border-radius: 5px;
+  color: #ff0001;
+}
+.tableCallServer {
+  position: relative;
+  bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.commandesNotification {
+  width: 173px;
+  height: 61px;
+  font-family: PoppinsBold;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe5e5;
+  border-radius: 15px;
+  color: #ff0001;
+  border: 2px solid #ff0001;
+  margin-left: 40px;
+}

@@ -29,6 +29,7 @@
 }
 
 .searchInput {
+  box-shadow: 0px 4px 8px 0px #00000040;
   border: none;
   font-family: Poppins;
   font-size: 16px;
@@ -109,6 +110,8 @@
   display: flex;
 }
 .Items {
+  overflow-x: auto;
+  scrollbar-width: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,6 +226,7 @@
   color: #1e1e1e;
 }
 .paragraphSpace {
+  box-shadow: 0px 4px 8px 0px #00000040;
   cursor: pointer;
   display: flex;
   background-color: #faf6e7;

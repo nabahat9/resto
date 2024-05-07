@@ -1,0 +1,125 @@
+.totalPageTable {
+  display: flex;
+  background-image: "src/chef/chefAssets/chefBg.png";
+}
+
+.stickItem {
+  z-index: 9999;
+  position: relative;
+  top: 23px;
+  width: 389px;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+.stickItem .stickItemLeft,
+.stickItemRight {
+  width: 23px;
+  height: 46px;
+  border-radius: 15px;
+  background-color: #b6b6b6;
+}
+.noteStickContent .tableNumberTitle {
+  color: #000000;
+  width: 384px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-family: PoppinsBold;
+  font-weight: 700;
+}
+.noteStickContentInside {
+  display: grid;
+  width: 389px;
+  height: 810px;
+  grid-template-rows: 83px 165px 165px 165px 165px 48px;
+}
+.noteStickContent {
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  width: 389px;
+  height: 810px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.tableItem {
+  margin: 10px;
+}
+.mealContent {
+  display: flex;
+  position: relative;
+  width: 170px;
+}
+.mealDescreptionTable {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: PoppinsBold;
+  font-weight: 700;
+  z-index: 0;
+  position: relative;
+  left: -48px;
+  bottom: -30px;
+  background-color: #e5e5e4;
+  color: #1e1e1e;
+  min-width: 240px;
+  height: 104px;
+  border-radius: 15px;
+  padding: 0px;
+  border: 1px solid #ffb92c;
+}
+.noteStickContent .quantityMealDiv {
+  position: relative;
+  font-family: PoppinsBold;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -10px;
+  left: -160px;
+  min-width: 56px;
+  border-radius: 15px;
+  height: 37px;
+  background-color: #ffb92c;
+  color: #000000;
+  z-index: 9999;
+}
+.noteStickContent .additionsMealDiv {
+  position: relative;
+  font-family: PoppinsBold;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -10px;
+  left: -175px;
+  min-width: 56px;
+  border-radius: 15px;
+  height: 37px;
+  background-color: #ffb92c;
+  color: #000000;
+  z-index: 9999;
+}
+.additionsMealDiv {
+  cursor: pointer;
+}
+.mealContent .mealPicture {
+  z-index: 9999;
+}
+.tableItem .validationTableDiv {
+  position: relative;
+  left: 260px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 111px;
+  background-color: #ffb92c;
+  height: 37px;
+  border-radius: 15px;
+}

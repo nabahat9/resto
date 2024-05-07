@@ -158,7 +158,6 @@ function Additions(props) {
           className="LesAdditions"
           initial={{ y: "100%" }}
           animate={{ y: "0" }}
-          transition={{ duration: 0.5 }}
         >
           <p className="lesAdditions">Les additions</p>
         </motion.div>

@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import SpecialCategorie from "./components/specialCategories/specialCtegorieOne";
 import Apropos from "./aboutUs/Apropos.jsx";
+import Chef from "./chef/chef.jsx";
 
 function App() {
   const [myData, setMyData] = useState([]);
@@ -51,6 +52,7 @@ function App() {
           }
         />
         <Route path="/aboutUs" element={<Apropos />} />
+        <Route path="/chef" element={<Chef />} />
       </Route>
     )
   );
