@@ -16,6 +16,7 @@ import { useState } from "react";
 import SpecialCategorie from "./components/specialCategories/specialCtegorieOne";
 import Apropos from "./aboutUs/Apropos.jsx";
 import Chef from "./chef/chef.jsx";
+import MenuEdit from "./menuEdit/menuEdit.jsx";
 
 function App() {
   const [myData, setMyData] = useState([]);
@@ -36,8 +37,25 @@ function App() {
       <Route path="/" element={<NavBar />}>
         <Route index element={<Home bg="transparent" />} />
         <Route
-          path="/categorie"
-          element={<Categories type="les plas principaux" />}
+          path="/categorie/Les entrees"
+          element={<Categories type="Les entrées" urlType="Les entrees" />}
+        />
+        <Route
+          path="/categorie/Les plats principaux"
+          element={
+            <Categories
+              type="Les plats principaux"
+              urlType="Les plats principaux"
+            />
+          }
+        />
+        <Route
+          path="/categorie/Les boissons"
+          element={<Categories type="Les boissons" urlType="Les boissons" />}
+        />
+        <Route
+          path="/categorie/Dessert"
+          element={<Categories type="Dessert" urlType="Dessert" />}
         />
         <Route
           path="/specialCategorie"
@@ -53,6 +71,7 @@ function App() {
         />
         <Route path="/aboutUs" element={<Apropos />} />
         <Route path="/chef" element={<Chef />} />
+        <Route path="/menuEdit" element={<MenuEdit />} />
       </Route>
     )
   );

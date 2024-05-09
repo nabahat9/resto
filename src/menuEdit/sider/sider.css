@@ -1,0 +1,62 @@
+.sider {
+  background-color: #e5e5e4;
+  width: 352px;
+  height: 100vh;
+}
+.editText {
+  width: 352px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "PoppinsBold";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
+.principalCategoriesSelf,
+.principalCategoriesItem,
+.promotionsEdit,
+.additionEdit {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #1e1e1e;
+  font-family: "Poppins";
+  font-weight: 400;
+  width: 352px;
+  height: 60px;
+  background-color: transparent;
+  cursor: pointer;
+  border-top: 0.5px solid #b6b6b6;
+}
+.promotionsEdit {
+  border-bottom: 0.5px solid #b6b6b6;
+}
+.chosen {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #ffb92c;
+  font-family: "Poppins";
+  font-weight: 400;
+  width: 352px;
+  height: 60px;
+  background-color: transparent;
+  cursor: pointer;
+  border-top: 0.5px solid #ffb92c;
+  border-bottom: 0.5px solid #ffb92c;
+}
+.chosenPrincipal {
+  justify-content: center;
+  align-items: center;
+  display: #1e1e1e;
+  font-family: "Poppins";
+  font-weight: 400;
+  width: 352px;
+  height: 60px;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: #ffb92c;
+}

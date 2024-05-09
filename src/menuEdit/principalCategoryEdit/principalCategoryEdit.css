@@ -1,0 +1,36 @@
+.editElementsDisplay {
+  width: 209px;
+  height: 244px;
+  background-color: #d9d9d91a;
+}
+.editElementsDisplayButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ffb92c;
+  color: #ffb92c;
+}
+.buttonsEditPrincipal {
+  display: flex;
+}
+.annulerButtonEdit {
+  width: 248px;
+  height: 40px;
+  border-radius: 15px;
+  color: #ffb92c;
+  border: 2px solid #ffb92c;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sauvegarderButtonEdit {
+  width: 174px;
+  height: 40px;
+  color: #1e1e1e;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb92c;
+}

@@ -3,6 +3,7 @@ import vector from "./Vector.svg";
 import arrow from "./arrow.svg";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import { motion } from "framer-motion";
 import arrow_left from "./arrow_left.svg";
 import arrow_right from "./arrow_right.svg";
@@ -15,22 +16,40 @@ function Categories(props) {
   const [initialComplete, setInitialComplete] = useState(false);
   const [offset, setOffset] = useState(0);
 
+  const [group, setGroup] = useState("Les boissons");
   const navigate = useNavigate();
+
+  /*useEffect(() => {
+    fetch(
+      "https://restaurant-backend-ccq4.onrender.com/categories/Les boissons"
+    )
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setMenuItems(data);
+      });
+  }, []);*/
 
   useEffect(() => {
     const url =
-      "https://familishop.onrender.com/products/?fbclid=IwAR0pWz-if8zvmrDWG37xqrWMxBmZ1eJiGDArDSsY1-4XjS4Z52hzFSkf_t4";
+      "https://restaurant-backend-ccq4.onrender.com/categories/" +
+      props.urlType;
+
     const fetchingData = async () => {
       try {
-        const fetched = await fetch(url);
-        const data = await fetched.json();
-        setMenuItems(data);
+        const response = await axios.get(url);
+        const data = response.data;
+        setMenuItems(data.category);
         setFetchedCompleted(true);
         console.log("i have fetched");
+        console.log(menuItems.category[0].name);
       } catch (error) {
         console.log("Error fetching data", error);
+        console.log("i didnt fetched");
       }
     };
+
     fetchingData();
   }, []);
 
@@ -126,7 +145,7 @@ function Categories(props) {
                       animate={{ scale: isMiddleItem ? 1.2 : 1, x: offset }}
                     >
                       <img
-                        src={menuItems[item].src_image}
+                        src={menuItems[item].image}
                         className="itemImg"
                         alt="item"
                       />
@@ -134,9 +153,7 @@ function Categories(props) {
                         className="paragraphSpace"
                         //onClick={handleClickingDiv(item)}
                       >
-                        <p className="itemParagraph">
-                          {menuItems[item].collection_name}
-                        </p>
+                        <p className="itemParagraph">{menuItems[item].name}</p>
                       </div>
                     </motion.div>
                   );
@@ -147,7 +164,7 @@ function Categories(props) {
         </div>
       ) : (
         <div className="loadingDiv">
-          <div class="lds-default">
+          <div className="lds-default">
             <div></div>
             <div></div>
             <div></div>

@@ -18,19 +18,19 @@ function Home() {
   const navigate = useNavigate();
 
   const handleClickStarters = () => {
-    navigate("/categorie");
+    navigate("/categorie/Les entrees");
   };
 
   const handleClickDish = () => {
-    navigate("/categorie");
+    navigate("/categorie/Les plats principaux");
   };
 
   const handleClickDrinks = () => {
-    navigate("/categorie");
+    navigate("/categorie/Les boissons");
   };
 
   const handleClickDessert = () => {
-    navigate("/categorie");
+    navigate("/categorie/Dessert");
   };
   return (
     <div className="home">
