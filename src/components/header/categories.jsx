@@ -53,6 +53,8 @@ function Categories(props) {
     fetchingData();
   }, []);
 
+  //sadek
+
   useEffect(() => {
     const initialAppearance = () => {
       const initialBiggerItem = Math.floor(menuItems.length / 2);
