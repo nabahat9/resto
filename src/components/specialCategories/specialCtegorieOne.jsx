@@ -11,22 +11,17 @@ import { useState, useEffect } from "react";
 function SpecialCategorie(props) {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/");
-  };
-
   /// fetching data ////
   const [menuItems, setMenuItems] = useState([]);
   const [fetchedComplete, setFetchedCompleted] = useState(false);
   const [ourItems, setOurItems] = useState([[]]);
   useEffect(() => {
-    const url =
-      "https://familishop.onrender.com/products/?fbclid=IwAR0pWz-if8zvmrDWG37xqrWMxBmZ1eJiGDArDSsY1-4XjS4Z52hzFSkf_t4";
+    const url = "https://restaurant-backend-ccq4.onrender.com/meals/Pizza";
     const fetchingData = async () => {
       try {
         const fetched = await fetch(url);
         const data = await fetched.json();
-        setMenuItems(data);
+        setMenuItems(data.meals);
         console.log("Data fetched successfully");
         setFetchedCompleted(true);
       } catch (error) {
@@ -59,6 +54,9 @@ function SpecialCategorie(props) {
     }
   }, [fetchedComplete, menuItems]);
 
+  const handleClickItemNavigate = (index) => {
+    navigate("/SspecialCategorie");
+  };
   return (
     <div className="totalPageSpecialCategorie">
       <div className="titleDiv">
@@ -92,15 +90,19 @@ function SpecialCategorie(props) {
                     item,
                     index ///// totalDiscription are the items to display
                   ) => (
-                    <div className="totalDiscription" key={index}>
+                    <div
+                      className="totalDiscription"
+                      key={index}
+                      onClick={handleClickItemNavigate(index)}
+                    >
                       <div className="description">
                         <img
-                          src={ourItems[rowIndex][index].src_image}
+                          src={ourItems[rowIndex][index].image}
                           className="pic"
                         />
                         <div>
                           <p className="dish">
-                            {ourItems[rowIndex][index].collection_name}
+                            {ourItems[rowIndex][index].name}
                           </p>
                           <p className="price">
                             {ourItems[rowIndex][index].price} DA

@@ -3,6 +3,9 @@
   width: 352px;
   height: 100vh;
 }
+.principalDishParagraph {
+  margin-right: 10px;
+}
 .editText {
   width: 352px;
   height: 60px;

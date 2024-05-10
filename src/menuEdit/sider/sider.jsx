@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./sider.css";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 
 function Sider() {
   const [principalCategoriesVisible, setPrincipalCategoriesVisible] =
@@ -44,10 +46,8 @@ function Sider() {
                 : ""
             }`}
           >
-            <p>Les plats Principale</p>
-            {principalCategoriesVisible ? (
-              <img src="C:\Users\nabah\restaurant_Project\src\menuEdit\menuEditAssets\_.png" />
-            ) : null}
+            <p className="principalDishParagraph">Les plats Principale</p>
+            {principalCategoriesVisible ? <IoIosArrowDown /> : <IoIosArrowUp />}
           </div>
           {principalCategoriesVisible
             ? principalCategories.map((element, index) => (

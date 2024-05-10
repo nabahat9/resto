@@ -1,0 +1,148 @@
+.promotionsEditing {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #1e1e1eb2;
+  line-height: 22.5px;
+  overflow-y: hidden;
+}
+.promotionsEditingFirstParagraph {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 55px;
+}
+.promotionsListEdit {
+  margin-right: 30px;
+  margin-left: 55px;
+  display: grid;
+  height: calc(100vh - 270px);
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  grid-gap: 20px;
+}
+@media screen and (min-width: 1250px) {
+  .promotionsListEdit {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.promotionItemEditBasic {
+  width: 209px;
+  height: 244px;
+  border-radius: 15px;
+  background: linear-gradient(
+    90deg,
+    #dedeea 0%,
+    #ecfaff 26.83%,
+    #ddedfb 49.96%,
+    #afafe6 87.06%,
+    #98a7d2 100%
+  );
+}
+.promotionItemEditSilver {
+  width: 209px;
+  height: 244px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    90deg,
+    #383838 0%,
+    #858585 16.1%,
+    #b8b8b8 29.6%,
+    #828282 63.6%,
+    #a0a0a0 80.1%,
+    #ffffff 100%
+  );
+}
+.promotionItemEditGolden {
+  width: 209px;
+  height: 244px;
+  border-radius: 15px;
+  background: linear-gradient(
+    90deg,
+    #edd267 0%,
+    #d2ac47 16.1%,
+    #dec25d 29.6%,
+    #f7ef8a 63.6%,
+    #e0cd6a 70.6%,
+    #ae8625 92.1%
+  );
+}
+.promotionItemEditPlatinuim {
+  width: 209px;
+  height: 244px;
+  border-radius: 15px;
+  background: linear-gradient(
+    90deg,
+    #5b5b5b 0%,
+    #a3a3a3 0.18%,
+    #e8e8e8 15.14%,
+    #e8e8e8 20.8%,
+    #c6c6c6 49.65%,
+    #f2f2f2 73.1%,
+    #b5b5b5 86.88%,
+    #9d9d9d 100%
+  );
+}
+.promotionItemEditDiamond {
+  width: 209px;
+  height: 244px;
+  border-radius: 15px;
+  background: linear-gradient(
+    90deg,
+    #f1f7fb 0%,
+    #d9ebf4 25%,
+    #cbe3f0 50%,
+    #b8d8e7 75%,
+    #9ac5db 100%
+  );
+}
+.promotionItemEditBasicContent,
+.promotionItemEditSilverContent,
+.promotionItemEditGoldenContent,
+.promotionItemEditPlatinuimContent,
+.promotionItemEditDiamondContent {
+  height: 204px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.promotionItemEditSub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: #1e1e1e;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-top: 1px solid #b6b6b6;
+}
+.imagePromotionItemEdit {
+  width: 79px;
+  height: 79px;
+}
+.addMoinPromotionItemEdit {
+  display: flex;
+  margin-top: 30px;
+}
+.addMoinPromotionItemPara {
+  cursor: pointer;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.26px;
+  color: #ff0001;
+}
+.promotionValueParagraph {
+  color: #ff0001;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.26px;
+}

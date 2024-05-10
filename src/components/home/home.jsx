@@ -49,27 +49,27 @@ function Home() {
           </div>
 
           <div className="dishh">
-            <img className="pic2" src={pic2} onClick={handleClickStarters} />
+            <img className="pic2" src={pic2} onClick={handleClickDish} />
             <div className="buttonDiv">
-              <div className="buttonBorder" onClick={handleClickStarters}>
+              <div className="buttonBorder" onClick={handleClickDish}>
                 <button className="button2">Les plats principaux </button>
               </div>
             </div>
           </div>
 
           <div className="drinks">
-            <img className="pic3" src={pic3} onClick={handleClickStarters} />
+            <img className="pic3" src={pic3} onClick={handleClickDrinks} />
             <div className="buttonDiv">
-              <div className="buttonBorder" onClick={handleClickStarters}>
+              <div className="buttonBorder" onClick={handleClickDrinks}>
                 <button className="button3">Les boissons </button>
               </div>
             </div>
           </div>
 
           <div className="desert">
-            <img className="pic4" src={pic4} onClick={handleClickStarters} />
+            <img className="pic4" src={pic4} onClick={handleClickDessert} />
             <div className="buttonDiv">
-              <div className="buttonBorder" onClick={handleClickStarters}>
+              <div className="buttonBorder" onClick={handleClickDessert}>
                 <button className="button4">Les desserts </button>
               </div>
             </div>
