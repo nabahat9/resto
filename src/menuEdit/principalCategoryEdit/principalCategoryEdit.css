@@ -1,36 +1,126 @@
 .editElementsDisplay {
+  display: flex;
+  padding: 0;
+  position: relative;
+}
+.principalCategoryEdit {
+  position: relative;
+  overflow-y: scroll;
+  height: calc(100vh - 100px);
+  overflow-x: hidden;
+  scrollbar-color: #c6c6c6 #e5e5e4;
+}
+.principalCategoryEdit::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  display: none;
+}
+.itemsEditPrincipal {
+  margin: 20px;
+  display: grid;
+  /* 40px top and bottom, 20px left and right */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  grid-gap: 20px;
+}
+@media screen and (min-width: 1250px) {
+  .itemsEditPrincipal {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.editElementsDisplayContent {
+  margin: 0;
+  background-color: #d9d9d91a;
+  backdrop-filter: blur(50px);
   width: 209px;
   height: 244px;
-  background-color: #d9d9d91a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid #d9d9d91a;
 }
 .editElementsDisplayButton {
+  margin-top: 10px;
+  cursor: pointer;
   display: flex;
+  width: 209px;
+  height: 41px;
   justify-content: center;
   align-items: center;
   border-top: 1px solid #ffb92c;
   color: #ffb92c;
 }
-.buttonsEditPrincipal {
+
+.deleteEelementEdit {
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+  left: 177px;
   display: flex;
+  width: 33px;
+  height: 33px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe5e5;
+  border-radius: 10px;
 }
-.annulerButtonEdit {
-  width: 248px;
-  height: 40px;
+
+.editElementsImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 151px;
+  height: 148px;
+}
+.editElementsTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #faf6e7;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+.editElementsprice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #faf6e7;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.addItemsDivEdit {
+  background-color: #d9d9d91a;
+  backdrop-filter: blur(50px);
+  width: 209px;
+  height: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 209px;
+  height: 244px;
+  border: 2px dashed #ffb92c;
   border-radius: 15px;
+}
+.plusParagraphEdit {
   color: #ffb92c;
-  border: 2px solid #ffb92c;
-  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 105px;
+  font-size: 70px;
 }
-.sauvegarderButtonEdit {
-  width: 174px;
-  height: 40px;
-  color: #1e1e1e;
-  border-radius: 15px;
+.addDishParagraphEdit {
+  color: #ffb92c;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffb92c;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }

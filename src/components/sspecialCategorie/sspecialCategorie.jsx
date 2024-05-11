@@ -93,7 +93,6 @@ function SspecialCategorie({ myData, type }) {
             </div>
           </div>
         </div>
-        <Additions />
       </div>
     </div>
   );

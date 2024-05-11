@@ -1,3 +1,23 @@
 .menuEdit {
   display: flex;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  overflow-y: hidden;
+}
+.contentEditMenu {
+  width: calc(100vw - 360px);
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.PromotionEdit {
+  display: flex;
+  height: calc(100vh - 60px);
+  overflow-y: hidden; /* Hide scrollbar and prevent scrolling */
+}
+.contentEditPromotion {
+  height: calc(100vh - 60px);
+  width: calc(100vw - 360px);
+  display: flex;
+  flex-direction: column;
 }
